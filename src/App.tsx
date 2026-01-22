@@ -154,8 +154,7 @@ function App() {
                 Christ's love and teachings.
              </p>
             </div>
-            <div className="grid grid-cols-2 gap-8">
-              
+            <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <h3 className="font-semibold mb-4">Connect</h3>
                 <ul className="space-y-2">
@@ -163,6 +162,10 @@ function App() {
                   <li><a href="https://www.facebook.com/morethanconquerorsaf" target="_blank" className="text-gray-400 hover:text-white transition-colors">Facebook</a></li>
                   <li><a href="https://www.facebook.com/morethanconquerorsaf" target="_blank" className="text-gray-400 hover:text-white transition-colors">Newsletter</a></li>
                 </ul>
+              </div>
+              <div>
+                <h3 className="font-semibold mb-4">Address</h3>
+                <p className="text-gray-400">PO Box 6061<br />Evansville IN 47720</p>
               </div>
             </div>
           </div>
