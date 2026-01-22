@@ -11,7 +11,7 @@ function App() {
             <div className="flex items-center gap-2">
               {/* FIXED: Use direct image URL instead of album */}
               <img 
-                src="https://morethanconquerorsafrica.org/wp-content/uploads/2023/07/MTC-Logo.png" 
+                src="https://imgur.com/a/zdmg67O" 
                 alt="More Than Conquerors Logo" 
                 className="h-12 w-auto"
               />
