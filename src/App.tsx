@@ -10,7 +10,7 @@ function App() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <img 
-                src="https://imgur.com/a/zdmg67O" 
+                src="url(https://imgur.com/a/zdmg67O)" 
                 alt="More Than Conquerors Logo" 
                 className="h-12 w-auto"
               />
@@ -143,7 +143,7 @@ function App() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <img 
-                  src="https://imgur.com/a/zdmg67O" 
+                  src=url("https://imgur.com/a/zdmg67O") 
                   alt="More Than Conquerors Logo" 
                   className="h-8 w-auto"
                 />
