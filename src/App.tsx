@@ -145,7 +145,7 @@ function App() {
               <div className="flex items-center gap-2 mb-4">
                 {/* FIXED: Same direct logo URL here */}
                 <img 
-                  src="https://morethanconquerorsafrica.org/wp-content/uploads/2023/07/MTC-Logo.png" 
+                  src="https://i.imgur.com/EJ3E9zi.png" 
                   alt="More Than Conquerors Logo" 
                   className="h-8 w-auto"
                 />
