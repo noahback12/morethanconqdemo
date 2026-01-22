@@ -9,8 +9,9 @@ function App() {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
+              {/* FIXED: Use direct image URL instead of album */}
               <img 
-                src="url(https://imgur.com/a/zdmg67O)" 
+                src="https://morethanconquerorsafrica.org/wp-content/uploads/2023/07/MTC-Logo.png" 
                 alt="More Than Conquerors Logo" 
                 className="h-12 w-auto"
               />
@@ -142,8 +143,9 @@ function App() {
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
+                {/* FIXED: Same direct logo URL here */}
                 <img 
-                  src=url("https://imgur.com/a/zdmg67O") 
+                  src="https://morethanconquerorsafrica.org/wp-content/uploads/2023/07/MTC-Logo.png" 
                   alt="More Than Conquerors Logo" 
                   className="h-8 w-auto"
                 />
@@ -152,7 +154,7 @@ function App() {
               <p className="text-gray-400 max-w-md">
                 A 501(c) charity organization dedicated to serving communities in Uganda through 
                 Christ's love and teachings.
-             </p>
+              </p>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
