@@ -143,7 +143,7 @@ function App() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <img 
-                  src="https://cdn.discordapp.com/attachments/617523776535658538/1351664666920615936/morethanconquerorsroundlogo.png?ex=67db3351&is=67d9e1d1&hm=365425d272c81c03307d0806504cf9ebcb7a4159c061450ede72d41d2e489ae5&" 
+                  src="/home/project/src/morethanconquerorsroundlogo.png" 
                   alt="More Than Conquerors Logo" 
                   className="h-8 w-auto"
                 />
