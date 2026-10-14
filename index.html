@@ -5,7 +5,31 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>More Than Conquerors</title>
-  </head>
+    <!-- MailerLite Universal Script -->
+    <script>
+      (function (m, a, i, l, e, r) {
+        m['MailerLiteObject'] = e;
+        function f() {
+          var c = { a: arguments, q: [] };
+          var r = this.push(c);
+          return "number" != typeof r ? r : f.bind(c.q);
+        }
+        f.q = f.q || [];
+        m[e] = m[e] || f.bind(f.q);
+        m[e].q = m[e].q || f.q;
+        r = a.createElement(i);
+        var _ = a.getElementsByTagName(i)[0];
+        r.async = 1;
+        r.src = l;
+        _.parentNode.insertBefore(r, _);
+      })(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+      // TODO: Replace YOUR_ACCOUNT_ID with your MailerLite account ID
+      var ml_account = ml('accounts', 'YOUR_ACCOUNT_ID', 'qdwaSr', 'load');
+    </script>
+    <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>

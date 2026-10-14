@@ -1,5 +1,13 @@
 import React from 'react';
-import { Facebook, Heart, School, Users, PrinterIcon as Prison, ChevronRight, ExternalLink } from 'lucide-react';
+import { Facebook, Heart, School, Users, PrinterIcon as Prison, ChevronRight, ExternalLink, Mail } from 'lucide-react';
+
+const MAILERLITE_FORM_ID = 'qdwaSr';
+
+function openMailerLitePopup() {
+  if (typeof window !== 'undefined' && typeof window.ml === 'function') {
+    window.ml('show', MAILERLITE_FORM_ID, true);
+  }
+}
 
 function App() {
   return (
@@ -137,6 +145,31 @@ function App() {
         </div>
       </div>
 
+      {/* Newsletter Signup Section */}
+      <section className="py-20 bg-gray-50" aria-labelledby="newsletter-heading">
+        <div className="container mx-auto px-6">
+          <div className="max-w-2xl mx-auto text-center">
+            <div className="inline-flex items-center justify-center w-14 h-14 bg-red-600 rounded-full mb-6">
+              <Mail className="w-7 h-7 text-white" />
+            </div>
+            <h2 id="newsletter-heading" className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+              Stay in the loop
+            </h2>
+            <p className="text-lg text-gray-600 mb-8">
+              Join our newsletter for the latest news, updates, and announcements delivered straight to your inbox.
+            </p>
+            <button
+              type="button"
+              className="ml-onclick-form bg-red-600 hover:bg-red-700 active:bg-red-800 text-white px-8 py-3 rounded-lg font-medium flex items-center gap-2 transition-colors mx-auto focus:outline-none focus-visible:ring-4 focus-visible:ring-red-300"
+              onClick={openMailerLitePopup}
+              aria-label="Join the Newsletter - opens signup form"
+            >
+              Join the Newsletter <ChevronRight className="w-5 h-5" />
+            </button>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-6">
@@ -162,7 +195,16 @@ function App() {
                 <ul className="space-y-2">
                   <li><a href="https://www.facebook.com/morethanconquerorsaf" target="_blank" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
                   <li><a href="https://www.facebook.com/morethanconquerorsaf" target="_blank" className="text-gray-400 hover:text-white transition-colors">Facebook</a></li>
-                  <li><a href="https://www.facebook.com/morethanconquerorsaf" target="_blank" className="text-gray-400 hover:text-white transition-colors">Newsletter</a></li>
+                  <li>
+                    <button
+                      type="button"
+                      className="ml-onclick-form text-gray-400 hover:text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-red-400 rounded px-0 py-0"
+                      onClick={openMailerLitePopup}
+                      aria-label="Subscribe to our Newsletter - opens signup form"
+                    >
+                      Newsletter
+                    </button>
+                  </li>
                 </ul>
               </div>
               <div>
